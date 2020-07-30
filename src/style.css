@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply inline-block p-2;
+}
+
+.btn-red{
+    @apply bg-red-500 text-white
+}
+
+.btn:hover{
+    @apply bg-black
+}
