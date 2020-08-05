@@ -4,23 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Workflow</title>
     <link rel="stylesheet" href="./index.css">
 </head>
 
-<body class="bg-gray-900 text-white text-center container">
-    <div class="p-8">
-        <img src="./icons/css.svg" alt="css" class="h-8">
-        <img src="https://source.unsplash.com/1600x600?rain" alt="unsplash" class="m-4 rounded-lg shadow-xl">
+<body class="lg:bg-gray-900 lg:text-white text-center md:bg-red-500 sm:bg-red-500 xs:bg-red-500">
+    <!-- <div>
+        <img src="./icons/css.svg" alt="css" class="h-8 object-cover object-center">
+    </div> -->
+    <div class="p-8 lg:hidden">
+        <img src="https://source.unsplash.com/1600x600?rain" alt="unsplash"
+            class="m-4 rounded-lg shadow-xl object-cover object-center">
         <h1 class="text-2xl font-hairline leading-loose">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. <span class="text-red-500">
                 Tenetur, quas.
             </span>
         </h1>
         <!-- leading-loose - line height, letter spaces - tracking-wider -->
-        <a href="https://unsplash.com" target="_blan k" class="inline-block bg-red-500 p-3 rounded-lg uppercase shadow-lg tracking-wider font-semibold text-sm">
+        <a href="https://unsplash.com" target="_blan k"
+            class="inline-block bg-red-500 p-3 rounded-lg uppercase shadow-lg tracking-wider font-semibold text-sm">
             Unsplash Images
         </a>
+    </div>
+    <!-- lg -->
+    <div class="p-8 bg-red-500 hidden lg:flex">
+        <div class="lg:w-1/2">
+            <h1 class="text-2xl font-hairline leading-loose">
+                Lorem ipsum dolor<span class="text-red-500">
+                    Tenetur, quas.
+                </span>
+            </h1>
+            <a href="https://unsplash.com" target="_blan k"
+                class="inline-block bg-black p-3 rounded-lg uppercase shadow-lg tracking-wider font-semibold text-sm mt-3">
+                Unsplash Images
+            </a>
+        </div>
+        <div class="lg:w-1/2 relative">
+            <img src="https://source.unsplash.com/1600x600?rain" alt="unsplash"
+                class="m-4 rounded-lg shadow-xl object-cover object-center bg-no-repeat h-64 absolute inset-0">
+                <!-- inset-0 -> absolutely positioning to top 0 bottom 0 left 0 right 0, i.e. stretch -->
+        </div>
     </div>
 </body>
 
