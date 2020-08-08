@@ -6,6 +6,9 @@ module.exports = {
       padding: '2rem'
     }
   },
-  variants: {},
+  variants: {
+    backgroundColor: ['responsive', 'hover', 'focus', 'active'], // order matters as active should beat hover
+    // fontSize: ['responsive', 'hover'] // will change font size on hover
+  },
   plugins: [],
 }
