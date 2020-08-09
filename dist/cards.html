@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body class="bg-gray-900 antialiased leading-loose">
+    <div class="container">
+
+        <!-- preserving the aspect ratio -->
+        <!-- <div class="bg-white" style="padding-bottom: 50%;"></div> -->
+
+        <div class="bg-red-500 rounded-lg overflow-hidden border">
+            <!-- overflow-hidden -> to stop image consuming the space left out by curvy edges of the card -->
+            <!-- truncate -> lorem100... -->
+            <!-- <div>
+                <img src="https://source.unsplash.com/300x300?rain" class="mx-auto h-64 w-full object-cover object-center" alt="unsplash">
+            </div> -->
+            <div class="bg-white pb-1/2 relative">
+                <img src="./images/rain2.jpg" class="h-full w-full top-0 absolute object-cover"
+                    alt="unsplash">
+            </div>
+            <div class="p-6 font-bold text-xl text-white">
+                <!-- items-baseline = VI, bottom of text match -->
+                <div class="flex items-baseline">
+                    <h4 class="mr-2">Unsplash</h4>
+                    <span class="bg-gray-900 rounded-full uppercase font-semibold tracking-wider px-2 text-xs">Rain
+                    </span>
+                </div>
+                <div class="uppercase text-black tracking-wider">
+                    Lorem, ipsum.
+                </div>
+                <div>
+                    <a href="#!" class="btn text-white">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
