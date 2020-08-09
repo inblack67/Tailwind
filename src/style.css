@@ -1,15 +1,30 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind base;
+@tailwind components;
 
 .btn{
-    @apply inline-block p-2;
-}
-
-.btn-red{
-    @apply bg-red-500 text-white
+    /* doesnt support hover and active */
+    @apply inline-block bg-black p-3 rounded-lg uppercase shadow-lg tracking-wider font-semibold text-sm mt-3;
 }
 
 .btn:hover{
-    @apply bg-black
+    @apply bg-blue-700 shadow-outline;
 }
+
+.btn:focus{
+    @apply outline-none;
+}
+
+.btn:active{
+    @apply bg-red-600;
+}
+
+@screen lg{
+    .btn{
+        @apply bg-purple-600;
+    }
+}
+
+/* so that btn in html can use further utilities too */
+@tailwind utilities;

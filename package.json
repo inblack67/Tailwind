@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwind build src/style.css -o dist/index.css"
+    "build:css": "tailwind build src/style.css -o dist/index.css",
+    "watch:css": "tailwind build src/style.css -o dist/index.css --watch"
   },
   "author": "Aman <devproddeploy@gmail.com>",
   "license": "MIT",
